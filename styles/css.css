@@ -784,13 +784,12 @@ label
 {
 	width:100vw;
 	overflow:hidden;
-	position:fixed;
 }
 
 .ufo_2_wrapper
 {
 	top:75vh;
-	position:relative;
+	position:fixed;
 	width:100vw;
 	height:50vh;
 }
