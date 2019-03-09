@@ -790,7 +790,7 @@ label
 .ufo_2_wrapper
 {
 	top:75vh;
-	position:sticky;
+	position:relative;
 	width:100vw;
 	height:50vh;
 }
