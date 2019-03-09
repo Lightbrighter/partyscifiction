@@ -790,7 +790,8 @@ label
 .ufo_2_wrapper
 {
 	top:75vh;
-	position:fixed;
+	/*position:fixed*/
+	position:relative;
 	width:100vw;
 	height:50vh;
 }
@@ -798,10 +799,10 @@ label
 .img_ufo_2
 {
 	width:30vw;
-	display:inline-block;
+	/*display:inline-block;*/
 	top:60vh;
 	animation-name: move;
-	animation-duration:10s;
+	animation-duration:5s;
 	animation-timing-function:ease-in-out;
 	animation-iteration-count: infinite;
 	z-index:0;
