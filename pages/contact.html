@@ -7,22 +7,27 @@
 		<meta name="keywords" content="scifi, sci-fi, eighties, movies, culture">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" media="screen" href="../styles/css.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../js/script.js"></script>
+		<script src="../js/jquery.js"></script>
+		
 	</head>
 
 	<body>
 		<nav>
-			<div class="button-burger">
+			<div class="button-burger" onclick="menuClose()" onmouseover="menuIntro()">
 				<div class="button-burger-line"></div>
 				<div class="button-burger-line"></div>
 				<div class="button-burger-line"></div>
 			</div>
 			
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../pages/gallery.html">Gallery</a></li>
-				<li><a href="../pages/articles.html">Articles</a></li>
-				<li><a href="../pages/contact.html">Contact</a></li>
+			<ul class="menu">
+				<li><a href="../index.html" class="menu-link">Home</a></li>
+				<li><a href="gallery.html" class="menu-link">Gallery</a></li>
+				<li><a href="articles.html" class="menu-link">Articles</a></li>
+				<li><a href="contact.html" class="menu-link">Contact</a></li>
 			</ul>
+
 		</nav>
 		
 		<div class="contact_header">
@@ -32,46 +37,43 @@
 			</div>
 			
 		<div class="contact_main">
-			<p class="contact_main_sub_title">Your informations</p>
+		<p class="contact_main_sub_title">Your informations</p>
+			<form name="myForm" action="/action_page.php" onsubmit="return validateFirstName()" method="post">
+					<p class="form_text"> First Name:</p> 
+					<input type="text" name="fname">
+ 					
+			</form>
+
+			<form name="myForm2" action="/action_page.php" onsubmit="return validateLastName()" method="post">
+					<p class="form_text"> Last Name:</p> 
+					<input type="text" name="lname">
+			</form>
+
+			<form name="myForm3" action="/action_page.php" onsubmit="return validateEmail()" method="post">
+			<p class="form_text">Email :</p>
+			<input type="email" name="email">
+			</form>
+
+			<form action="/action_page.php" onsubmit="return validateChoice()">
+			<p class="form_text">Type of contribution :</p>
+				<select id="selectContribution">
+					<option value="" selected>None</option>
+					<option>Redaction</option>
+					<option>Pictures</option>
+					<option>Audio</option>
+					<option>Video</option>
+					<option>Other</option>
+				</select>
+				
+			</form>
+
+			<form onsubmit="return validateText()">
+				<textarea cols="20" rows="20" id="textToFill"></textarea>
+			</form>
+
 			<form>
-				<fieldset>
-					<div> 
-						<p class="contact_main_sub_title_2">Full Name<abbr title="obligatory">*</abbr></p>
-						<label>First Name</label>
-						<input type="text">
-
-						<label>Last Name</label>
-						<input type="text">
-					</div>
-				</fieldset>
-
-				<fieldset>
-						<div>
-							<p class="contact_main_sub_title_2">Mail Adress<abbr title="obligatory"> *</abbr></p>
-							
-							<input type="email" size="32" minlength="3" maxlength="64" placeholder="example@coco.com">
-						</div>
-				</fieldset>
-				
-				<fieldset>
-					<p class="contact_main_sub_title_2">Type of contribution</p>
-							<select>
-								<option>Redaction</option>
-								<option>Pictures</option>
-								<option>Audio</option>
-								<option>Video</option>
-								<option>Other</option>
-							</select>
-				</fieldset>
-				
-				<fieldset>
-						<p class="contact_main_sub_title_2">Your recommandations about this project</p>
-						<textarea cols="20" rows="20">
-						</textarea>
-				</fieldset>
-				
 				<div class="contact_main_send_wrapper">
-				<p class="contact_main_send">SEND</p>
+				<button class="contact_main_send" onclick="validateEverything()">SEND</button>
 				</div>
 				</form>
 		</div>
@@ -87,7 +89,7 @@
 				<div class="sub_footer_2">
 					<p> F.A.Q.</p> 
 					<p>CONDITIONS GENERALES</p>
-					<p>HISTORIQUE</p>
+					<p id="historique">HISTORIQUE</p>
 				</div>
 				
 				<div class="sub_footer_3">
