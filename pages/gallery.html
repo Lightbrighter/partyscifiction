@@ -8,22 +8,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" media="screen" href="../styles/css.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">  
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../js/script.js"></script>
+		<script src="../js/jquery.js"></script>
 	</head>
 
 	<body>
 		<nav>
-			<div class="button-burger">
+			<div class="button-burger" onclick="menuClose()" onmouseover="menuIntro()">
 				<div class="button-burger-line"></div>
 				<div class="button-burger-line"></div>
 				<div class="button-burger-line"></div>
 			</div>
 			
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../pages/gallery.html">Gallery</a></li>
-				<li><a href="../pages/articles.html">Articles</a></li>
-				<li><a href="../pages/contact.html">Contact</a></li>
+			<ul class="menu">
+				<li><a href="../index.html" class="menu-link">Home</a></li>
+				<li><a href="gallery.html" class="menu-link">Gallery</a></li>
+				<li><a href="articles.html" class="menu-link">Articles</a></li>
+				<li><a href="contact.html" class="menu-link">Contact</a></li>
 			</ul>
+
 		</nav>
 		
 		<div class="gallery_header">
@@ -35,25 +39,65 @@
 			
 			
 			<div class="gallery_flex_container">
-					<div class="gallery_flex"><img src="../img/img_gallery_1.gif" alt="img_flex" class="img_flex">
+					
+					<div class="gallery_flex"><img src="../img/img_gallery_1.gif" alt="img_flex" class="img_flex" onclick="galleryOpen()">
 					</div>
-					<div class="gallery_flex"><img src="../img/img_gallery_2.jpg" alt="img_flex" class="img_flex">
+
+					<div class="gallery_flex_hidden" ><img src="../img/img_gallery_1.gif" alt="img_flex_hidden" class="img_flex_hidden" onclick="galleryClose()">
 					</div>
-					<div class="gallery_flex"><img src="../img/img_gallery_3.jpg" alt="img_flex" class="img_flex">
+
+					<div class="gallery_flex"><img src="../img/img_gallery_2.jpg" alt="img_flex" class="img_flex" onclick="galleryOpen2()">
 					</div>
-					<div class="gallery_flex"><img src="../img/img_gallery_4.jpg" alt="img_flex" class="img_flex">
+
+					<div class="gallery_flex_hidden_2"><img src="../img/img_gallery_2.jpg" alt="img_flex_hidden" class="img_flex_hidden" onclick="galleryClose2()">
 					</div>
-					<div class="gallery_flex"><img src="../img/img_gallery_5.jpeg" alt="img_flex" class="img_flex">
+
+					<div class="gallery_flex"><img src="../img/img_gallery_3.jpg" alt="img_flex" class="img_flex" onclick="galleryOpen3()">
 					</div>
-					<div class="gallery_flex"><img src="../img/img_gallery_6.jpg" alt="img_flex" class="img_flex">
+
+					<div class="gallery_flex_hidden_3"><img src="../img/img_gallery_3.jpg" alt="img_flex" class="img_flex_hidden" onclick="galleryClose3()">
 					</div>
-					<div class="gallery_flex"><img src="../img/img_gallery_7.jpg" alt="img_flex" class="img_flex">
+
+					<div class="gallery_flex"><img src="../img/img_gallery_4.jpg" alt="img_flex" class="img_flex" onclick="galleryOpen4()">
 					</div>
-					<div class="gallery_flex"><img src="../img/img_gallery_8.jpeg" alt="img_flex" class="img_flex">
+
+					<div class="gallery_flex_hidden_4"><img src="../img/img_gallery_4.jpg" alt="img_flex" class="img_flex_hidden" onclick="galleryClose4()">
 					</div>
-					<div class="gallery_flex"><img src="../img/img_gallery_9.jpg" alt="img_flex" class="img_flex">
+
+					<div class="gallery_flex"><img src="../img/img_gallery_5.jpeg" alt="img_flex" class="img_flex" onclick="galleryOpen5()">
 					</div>
-					<div class="gallery_flex"><img src="../img/img_gallery_10.jpg" alt="img_flex" class="img_flex">
+					
+					<div class="gallery_flex_hidden_5"><img src="../img/img_gallery_5.jpeg" alt="img_flex" class="img_flex_hidden" onclick="galleryClose5()">
+					</div>
+					
+					<div class="gallery_flex"><img src="../img/img_gallery_6.jpg" alt="img_flex" class="img_flex" onclick="galleryOpen6()">
+					</div>
+
+					<div class="gallery_flex_hidden_6"><img src="../img/img_gallery_6.jpg" alt="img_flex" class="img_flex_hidden" onclick="galleryClose6()">
+					</div>
+					
+					<div class="gallery_flex"><img src="../img/img_gallery_7.jpg" alt="img_flex" class="img_flex" onclick="galleryOpen7()">
+					</div>
+
+					<div class="gallery_flex_hidden_7"><img src="../img/img_gallery_7.jpg" alt="img_flex" class="img_flex_hidden" onclick="galleryClose7()">
+					</div>
+					
+					<div class="gallery_flex"><img src="../img/img_gallery_8.jpeg" alt="img_flex" class="img_flex" onclick="galleryOpen8()">
+					</div>
+
+					<div class="gallery_flex_hidden_8"><img src="../img/img_gallery_8.jpeg" alt="img_flex" class="img_flex_hidden" onclick="galleryClose8()">
+					</div>
+
+					<div class="gallery_flex"><img src="../img/img_gallery_9.jpg" alt="img_flex" class="img_flex" onclick="galleryOpen9()">
+					</div>
+					
+					<div class="gallery_flex_hidden_9"><img src="../img/img_gallery_9.jpg" alt="img_flex" class="img_flex_hidden" onclick="galleryClose9()">
+					</div>
+					
+					<div class="gallery_flex"><img src="../img/img_gallery_10.jpg" alt="img_flex" class="img_flex" onclick="galleryOpen10()">
+					</div>
+
+					<div class="gallery_flex_hidden_10"><img src="../img/img_gallery_10.jpg" alt="img_flex" class="img_flex_hidden" onclick="galleryClose10()">
 					</div>
 
 			</div>
