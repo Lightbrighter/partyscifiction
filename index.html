@@ -7,7 +7,9 @@
 		<meta name="keywords" content="scifi, sci-fi, eighties, movies, culture">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" media="screen" href="./styles/css.css">
-	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="./js/script.js"></script>
+		<script src="./js/jquery.js"></script>
 	</head>
 
 	<body>
@@ -34,66 +36,66 @@
 		</div>
 		
 		<nav>
-			<div class="button-burger">
+			<div class="button-burger" onclick="menuClose()" onmouseover="menuIntro()">
 				<div class="button-burger-line"></div>
 				<div class="button-burger-line"></div>
 				<div class="button-burger-line"></div>
 			</div>
 			
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="./pages/gallery.html">Gallery</a></li>
-				<li><a href="./pages/articles.html">Articles</a></li>
-				<li><a href="./pages/contact.html">Contact</a></li>
+			<ul class="menu">
+			
+				<li><a href="#" class="menu-link">Home</a></li>
+				<li><a href="./pages/gallery.html" class="menu-link">Gallery</a></li>
+				<li><a href="./pages/articles.html" class="menu-link">Articles</a></li>
+				<li><a href="./pages/contact.html" class="menu-link">Contact</a></li>
 			</ul>
+
 		</nav>
 		
 		<header>
-				
+			<div class="hole_header_title"></div>
 			<p class="header_title">Party Sci Fiction</p>
 			<div class="ufo_4_wrapper">
 				<div class="ufo_4">
 						<img src="./img/img_falcon.png" alt="img_ufo" class="img_ufo_4">
 				</div>
-				</div>
-			<h2>The new fan community of the best sci-fi moments</h2>
+			</div>
+
+			<h2>The new fan community of the best <br>sci-fi moments</h2>
+			<div class="banner_slider"></div>
 			<div class="header_p_wrapper">
 				<p class="header_p">P2P mindset from sci-fi lovers, each contribution is welcome! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla velit eu lacus accumsan, ac euismod dui dignissim. </p>
-				<a href="#data_space_base_wrapper"><p class="header_p_discover"> DISCOVER US!</p></a>
+				<a href="#data_space_base_wrapper"><p class="header_p_discover" id="buttonSpecial"> JOINS US!</p></a>
+				<div id="windowSpecial"></div>
 			</div>
 		</header>
 		
 		<section>
-			<div class="data_space_base_background_wrapper">
-				<div id="data_space_base_wrapper">
-				</div>
-					<p class="data_space_base_title">Data Space Base</p>
-			</div>
-
-			<div class="banner_slider">
-			</div>
 
 			<div class="points_wrapper">
-				<div class="points">
-				</div>
 					<p class="points_text">keys points</p>
 			</div>
 			
-			<div class="points_container_bottom">
-					<div class="points_container_circles_and_text">
+			<div class="points_container">
+					<div class="points_sub_container">
 						<div class="circle_logo">
 						</div>
-						<p class="points_circle_aside_text">Hello it's me, what a news!Etiam commodo ac arcu nec tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+						<p class="points_aside_text">Hello it's me, what a news!Etiam commodo ac arcu nec tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 					</div>
 				
-					<div class="points_container_circles_and_text">
+					<div class="points_sub_container">
 						<div class="circle_logo">
 						</div>
-						<p class="points_circle_aside_text">Hello it's me, what a news!Etiam commodo ac arcu nec tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+						<p class="points_aside_text">Hello it's me, what a news!Etiam commodo ac arcu nec tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
 					</div>
-				<div class="points_sub_container_building">
+
+					<div class="points_sub_container">
+						<div class="circle_logo">
+						</div>
+						<p class="points_aside_text">Hello it's me, what a news!Etiam commodo ac arcu nec tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+					</div>
+
 					<img src="./img/img_building_2.png" alt="img_ufo" class="img_building_2">
-				</div>
 			</div>
 		</section>
 		
