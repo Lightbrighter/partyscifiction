@@ -8,22 +8,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" media="screen" href="../styles/css.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">  
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../js/script.js"></script>
+		<script src="../js/jquery.js"></script>
 	</head>
 
 	<body>
 		<nav>
-			<div class="button-burger">
+			<div class="button-burger" onclick="menuClose()" onmouseover="menuIntro()">
 				<div class="button-burger-line"></div>
 				<div class="button-burger-line"></div>
 				<div class="button-burger-line"></div>
 			</div>
 			
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../pages/gallery.html">Gallery</a></li>
-				<li><a href="../pages/articles.html">Articles</a></li>
-				<li><a href="../pages/contact.html">Contact</a></li>
+			<ul class="menu">
+				<li><a href="../index.html" class="menu-link">Home</a></li>
+				<li><a href="gallery.html" class="menu-link">Gallery</a></li>
+				<li><a href="articles.html" class="menu-link">Articles</a></li>
+				<li><a href="contact.html" class="menu-link">Contact</a></li>
 			</ul>
+
 		</nav>
 		
 		<div class="articles_header">
@@ -38,13 +42,13 @@
 					<div class="articles_flex">
 						<div class="articles_flex_content">
 							<h3>ARTICLE TITLE</h3>
-							<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur euismod enim sed posuere. Nulla eget sem at augue imperdiet pulvinar et pharetra nulla. Duis facilisis faucibus nulla, vitae scelerisque enim ultrices sit amet. Morbi condimentum bibendum auctor. Curabitur massa arcu, venenatis vel ante non, ornare lacinia libero. Morbi vel posuere nisi. Mauris eu lacinia magna.
+							<p class="articles_text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur euismod enim sed posuere. Nulla eget sem at augue imperdiet pulvinar et pharetra nulla. Duis facilisis faucibus nulla, vitae scelerisque enim ultrices sit amet. Morbi condimentum bibendum auctor. Curabitur massa arcu, venenatis vel ante non, ornare lacinia libero. Morbi vel posuere nisi. Mauris eu lacinia magna.
 
 		Nulla molestie convallis mi non porta. Proin aliquam, tellus et tempor iaculis, lectus orci pretium dui, at mattis leo erat vel diam. Donec porttitor aliquet nulla, in scelerisque urna hendrerit vel. Praesent in fermentum mauris. Morbi non vulputate magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc volutpat pellentesque ligula nec lacinia. Pellentesque eget convallis sapien, sed auctor urna. Curabitur ullamcorper ac elit eu commodo. Curabitur quis tempus velit, id finibus risus. Nullam finibus volutpat urna, ac blandit lorem. Praesent dolor elit, porttitor non dapibus vel, sagittis at nisl. Etiam sed leo in nisl hendrerit vestibulum at nec lectus. Nullam imperdiet erat et eros lobortis, eget finibus turpis fringilla.  
 							</p>
 						</div>
 						<div class="articles_read_more_wrapper">
-						<p class="articles_read_more">READ MORE</p>
+						<p class="articles_read_more" onclick="articleOpen()">READ MORE</p>
 						</div>
 					</div>
 					
